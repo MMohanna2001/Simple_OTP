@@ -23,7 +23,7 @@ recipient_email = get_recipient_email()
 
 
 # Send the email using yagmail
-yag = yagmail.SMTP('senderemail96@gmail.com', 'gkeupnzsgtmarzpq')
+yag = yagmail.SMTP('email', 'pass') #change accordingly
 contents = ['This is one OTP',
             str(password)]
 flag = yag.send(recipient_email, 'subject', contents)
